@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore HTML & CSS3</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4; /* CSS3 Colors */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff; /* CSS3 Backgrounds */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* CSS3 Shadow */
+        }
+        header {
+            background: linear-gradient(to right, #007bff, #00b0ff); /* CSS3 Backgrounds */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: 3px solid #0056b3; /* CSS3 Borders */
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative; /* CSS3 Positions */
+            bottom: 0;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* CSS3 Styles */
+        /* CSS3 Fonts & Text */
+        h1, h2 {
+            font-family: 'Arial', sans-serif;
+            text-shadow: 1px 1px 0 #ccc; /* CSS3 Text */
+        }
+
+        /* CSS3 Links */
+        nav ul li a:hover, nav ul li a:focus {
+            color: #badcff;
+            text-decoration: underline; /* CSS3 Links */
+        }
+
+        /* CSS3 Lists */
+        ul, ol {
+            padding-left: 20px;
+        }
+        ul li {
+            list-style-type: circle; /* CSS3 Lists */
+            line-height: 1.6;
+        }
+        ol li {
+            list-style-type: decimal; /* CSS3 Lists */
+        }
+
+        /* CSS3 Box Model */
+        img {
+            border: 4px solid #ddd; /* CSS3 Borders */
+            margin: 10px 0; /* CSS3 Margin */
+            padding: 5px; /* CSS3 Padding */
+            width: 100%; /* Responsive images */
+            max-width: 300px; /* CSS3 Box Model */
+        }
+
+        /* Additional Styling */
+        .content {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #e9ecef; /* CSS3 Backgrounds */
+            border-radius: 5px; /* CSS3 Borders */
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse; /* CSS3 Borders */
+        }
+        table, th, td {
+            border: 1px solid #ddd; /* CSS3 Borders */
+            padding: 8px; /* CSS3 Padding */
+            text-align: left; /* CSS3 Text */
+        }
+        th {
+            background-color: #f2f2f2; /* CSS3 Backgrounds */
+        }
+        form input[type="text"], form input[type="email"], form input[type="submit"] {
+            padding: 10px; /* CSS3 Padding */
+            margin: 5px; /* CSS3 Margin */
+            border: 1px solid #ddd; /* CSS3 Borders */
+            display: block;
+        }
+        form input[type="submit"] {
+            background-color: #007bff; /* CSS3 Backgrounds */
+            color: #fff;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #0056b3; /* CSS3 Colors */
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>HTML & CSS3 Exploration</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#paragraphs">Paragraphs</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#divs">Div Elements</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <section id="introduction" class="content">
+        <h2>Introduction to HTML</h2>
+        <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Along with CSS and JavaScript, HTML is a cornerstone technology used to create web pages as well as to create user interfaces for mobile and web applications.</p>
+    </section>
+
+    <section id="paragraphs" class="content">
+        <h2>Paragraphs</h2>
+        <p>This is a paragraph. Paragraphs are block elements in HTML that are used to organize written content on the web page.</p>
+    </section>
+
+    <section id="headings" class="content">
+        <h2>Headings</h2>
+        <p>Headings are used to structure and outline your content. Here are examples of all six heading levels in HTML.</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </section>
+
+    <section id="images" class="content">
+        <h2>Images</h2>
+        <p>Images can be inserted into your web page using the &lt;img&gt; tag. The 'src' attribute specifies the path to the image, and the 'alt' attribute provides alternative text for the image if it cannot be displayed.</p>
+        <img src="c130.jpg" alt="C-130 Aircraft">
+    </section>
+
+    <section id="lists" class="content">
+        <h2>Lists</h2>
+        <p>There are two types of lists in HTML: ordered and unordered. Ordered lists use numbers as list items, while unordered lists use bullets.</p>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+    </section>
+
+    <section id="forms" class="content">
+        <h2>Forms</h2>
+        <p>Forms are used for user input. The &lt;form&gt; element wraps around interactive controls for submitting information to a web server.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="tables" class="content">
+        <h2>Tables</h2>
+        <p>Tables are used to display data in a tabular format. A table is defined with the &lt;table&gt; tag.</p>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Item 1</td>
+                <td>A great item</td>
+                <td>$9.99</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>Another great item</td>
+                <td>$12.99</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="divs" class="content">
+        <h2>Div Elements</h2>
+        <p>The &lt;div&gt; element is a block-level container that is used to group together HTML elements and apply CSS styles.</p>
+        <div style="background-color: #e9ecef; padding: 20px; border-radius: 5px;">
+            This is a div element with a background color, padding, and rounded borders.
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>HTML & CSS3 Exploration Project © 2024</p>
+</footer>
+
+</body>
+</html>
